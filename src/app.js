@@ -11,7 +11,7 @@ function validateRepositoryId(request, response, next) {
 
 	if(!isUuid(id)){
 		return response.status(400).json({
-			error: 'Invalid exemple ID.'
+			error: 'Invalid project ID.'
 		})
 	}
 	return next();
